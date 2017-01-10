@@ -1,0 +1,166 @@
+html, body, #corps {
+	height: 100%;
+}
+
+body {
+	min-width: 240px;
+	margin: 0;
+	word-wrap: break-word;
+}
+
+#corps {
+	background: white;
+	min-height: 300px;
+	margin: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#menu {
+	margin: auto;
+	background: #469A38;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+}
+#menu a {
+	color : inherit;
+}
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#menu li {
+	display: inline-block;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+a {
+	text-decoration: none;
+	color: #4169E1;
+}
+
+form {
+	max-width: 500px;
+	margin: auto;
+}
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+input, textarea {
+	width: 100%;
+	padding: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid black;
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+input[type=submit] {
+	color: white;
+	background: #469A38;
+	font-weight: bold;
+	height: 30px;
+}
+
+h1, h2, h3 {
+	color: #469A38;
+	text-align: center;
+}
+
+.erreur {
+	color: red;
+}
+.succes {
+	color: #469A38;
+}
+.erreur, .succes {
+	text-align: center;
+	font-weight: bold;
+}
+
+.diffusion {
+	border: 1px solid grey;
+}
+.diffusion .titreDiffusion {
+	font-weight: bold;
+	display: block;
+	background: #B0B5B4;
+	padding: 7px;
+}
+.diffusion .infoDiffusion {
+	display: block;
+	padding: 7px;
+}
+.diffusion a {
+	color: inherit;
+}
+
+.message {
+	border: 1px solid grey;
+}
+.message .infoMessage {
+	display: block;
+	background: #B0B5B4;
+	padding: 7px;
+}
+.message .infoMessage .dateMessage {
+	display: block;
+	text-align: right;
+}
+.message .contenuMessage {
+	display: block;
+	padding: 7px;
+}
+.centre {
+	text-align: center;
+}
+
+img, iframe {
+	max-width: 100%;
+}
+
+.envoye {
+	background: green;
+	color: white;
+	margin-left: 20%;
+}
+.recu {
+	background: #B0B5B4;
+	margin-right: 20%;
+}
+.envoye, .recu {
+	border-radius: 5px;
+	padding: 5px;
+}
+.msgInfo {
+	display: block;
+	text-align: right;
+	margin-top: 5px;
+	font-size: small;
+}
+
+select.destinataire {
+	width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    min-width: 30px;
+}
+td, th {
+    border: 1px solid grey;
+    padding: 5px;
+}
+td{
+    word-break: break-all;
+}
