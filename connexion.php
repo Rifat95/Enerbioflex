@@ -33,7 +33,7 @@ if (formulaireValide('mail')) {
 		$code = crypterMdp($user['login']);
 		$code = substr($code, 0, 10);
 		$code = strtolower($code);
-		$lien = 'http://' . $_SERVER['HTTP_HOST'] . '/oubli.php?code=' . $code . '&mail=' . $_POST['mail'];
+		$lien = 'http://' . $_SERVER['HTTP_HOST'] . '/s3a32016/oubli.php?code=' . $code . '&mail=' . $_POST['mail'];
 
 		$destinataire = $_POST['mail'];
 		$sujet = 'Changement de votre mot de passe';
