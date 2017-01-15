@@ -16,10 +16,6 @@
 			?>
 
 			&nbsp; &nbsp;
-			<img src="vues/img/horloge.png" alt="horloge" />
-			<?= $topic['dateCreation'] ?>
-
-			&nbsp; &nbsp;
 			<img src="vues/img/chat.png" alt="chat" />
 			<?= $topic['nbPost'] ?> - <?= formaterDate($topic['dernierPost']) ?>
 

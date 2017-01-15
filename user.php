@@ -12,8 +12,14 @@ if (!$user)
 	erreur404();
 
 if (formulaireValide('type') && $ADMIN) {
+	$chaines = [
+		'membre' => 'membre',
+		'modo' => 'modérateur',
+		'admin' => 'administrateur'
+	];
+
 	modifierUser($_POST['type'], $_GET['id']);
-	$_SESSION['msgSucces'] = $user['login'] . ' est désormais un ' . $_POST['type'];
+	$_SESSION['msgSucces'] = $user['login'] . ' est désormais un ' . $chaines[$_POST['type']];
 	header('Location: ./user.php?id=' . $_GET['id']);
 	exit();
 }

@@ -43,7 +43,7 @@ if (formulaireValide('mail')) {
 
 		mail($destinataire, $sujet, $message, $headers);
 
-		$_SESSION['msgSucces'] = 'Nouveau mot de passe envoyé par mail';
+		$_SESSION['msgSucces'] = 'Un lien pour réinitialiser votre mot de passe vous à été envoyé par mail';
 	}
 }
 
