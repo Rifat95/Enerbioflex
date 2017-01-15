@@ -7,16 +7,17 @@ function getDiscussions($user1Id) {
 		SELECT Discussion.*,
 			Userr.login as user2Login,
 			GREATEST(
-				(SELECT IFNULL(MAX(Reception.dateEnvoi), 0)
+				(SELECT IFNULL(MAX(Reception.dateEnvoi), '2000-01-01 00:00:00')
 				FROM Reception
 				WHERE Reception.destinataireId = :i
 				AND Reception.discussionId = Discussion.id),
 
-				(SELECT IFNULL(MAX(Envoi.dateEnvoi), 0)
+				(SELECT IFNULL(MAX(Envoi.dateEnvoi), '2000-01-01 00:00:00')
 				FROM Envoi
 				WHERE Envoi.expediteurId = :i
 				AND Envoi.discussionId = Discussion.id)
-			) AS dateDernierMsg
+			) as dateDernierMsg
+
 		FROM Discussion
 		LEFT JOIN Userr
 			ON Discussion.user2Id = Userr.id
