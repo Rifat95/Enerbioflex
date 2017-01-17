@@ -10,8 +10,8 @@ if (isset($_POST['login']) && isset($_POST['mdp']) && isset($_POST['mdp2'])) {
 
 	if (strlen($_POST['login']) < 2 || strlen($_POST['login']) > 15)
 		$_SESSION['msgErreur'] = 'Le login doit contenir entre 2 et 15 caractères';
-	elseif (strlen($_POST['mdp']) < 4 || strlen($_POST['mdp']) > 40)
-		$_SESSION['msgErreur'] = 'Le mot de passe doit contenir entre 4 et 40 caractères';
+	elseif (strlen($_POST['mdp']) < 6 || strlen($_POST['mdp']) > 40)
+		$_SESSION['msgErreur'] = 'Le mot de passe doit contenir entre 6 et 40 caractères';
 	elseif (!preg_match($caracteresPermis, $_POST['login']))
 		$_SESSION['msgErreur'] = 'Le login contient des caractères non autorisés';
 	elseif ($_POST['mdp'] != $_POST['mdp2'])
