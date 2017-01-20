@@ -37,7 +37,7 @@
 <h3>Programmer une diffusion</h3>
 
 <form method="post" action="liste-diffusions.php">
-	<p><a href="tuto.pdf">Comment diffuser via Dailymotion ?</a></p>
+	<p><a href="tuto.html">Comment diffuser via Dailymotion ?</a></p>
 	<p>
 		<label for="titre">Titre</label>
 		<input type="text" name="titre" id="titre" required />
